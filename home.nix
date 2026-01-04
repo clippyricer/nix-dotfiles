@@ -91,8 +91,8 @@
   services.gammastep.provider = "geoclue2";
   services.gammastep.longitude = true;
   services.gammastep.latitude = true;
-  services.gammastep.dawnTime = true;
-  services.gammastep.duskTime = true;
+  # services.gammastep.dawnTime = true;
+  # services.gammastep.duskTime = true;
 
   services.gammastep = {
     enable = true;
