@@ -96,6 +96,8 @@
 
   services.gammastep = {
     enable = true;
+      duskTime = "18:35-20:15";
+      dawnTime = "6:00-7:45";
   temperature = {
     day = 3700;
     night = 3700;
