@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./hyprland.nix
     ];
 
   # Bootloader.
@@ -37,7 +38,7 @@
   services.geoclue2.enable = true;
 
   # Enable hyprland
-  programs.hyprland.enable = true;
+  # programs.hyprland.enable = true;
 
   # Enable zsh shell
   programs.zsh.enable = true;

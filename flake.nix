@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland";
 
   };
 
@@ -16,8 +16,8 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
     nixosConfigurations = {
-      specialArgs = { inherit inputs; };
       nixos = lib.nixosSystem {
+        specialArgs = { inherit inputs; }; # this is the important part
         inherit system;
         modules = [ ./configuration.nix ];
       };
