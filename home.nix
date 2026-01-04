@@ -86,5 +86,14 @@
       init.defaultBranch = "main";
     };
   };
+    
+  # Enable gammastep
+  services.gammastep = {
+    enable = true;
+  temperature = {
+    day = 3700;
+    night = 3700;
+  };
+  };
 }
 
