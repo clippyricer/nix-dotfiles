@@ -32,6 +32,9 @@
   # geodclue2
   services.geoclue2.enable = true;
 
+  # Enable hyprland
+  programs.hyprland.enable = true;
+
   # Enable zsh shell
   programs.zsh.enable = true;
   
@@ -134,6 +137,9 @@
      clang
      discord
      gammastep
+     polkit
+     xwayland
+     dconf
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -16,13 +16,16 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
-        modules = [ ./configuration.nix ];
+        modules = [
+        ./configuration.nix
+        ./hyprland.nix
+        ];
       };
     };
     homeConfigurations = {
       byte = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	modules = [ ./home.nix ];
+	modules = [./home.nix];
 	};
      };
   };
