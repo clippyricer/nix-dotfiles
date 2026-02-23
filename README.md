@@ -1,3 +1,3 @@
-### I stoped using nixos
+### I stopped using nixos
 
 ### might come back another day
