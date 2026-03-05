@@ -70,8 +70,26 @@
     git
   ];
 
+  # Programs
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
+  programs.git = {
+    enable = true;
+    lfs.enable = true;
+    alias = {
+      ga "git add .";
+      gs "git status";
+      co "commit";
+      gp "git push";
+    };
+    settings = {
+      user = {
+        name = "clippyricer";
+        email = "bannansmooth68@proton.me";
+      };
+      init.defaultBranch = "main"
+    };
+  };
   
 
   # Some programs need SUID wrappers, can be configured further or are
