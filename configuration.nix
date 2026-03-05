@@ -76,13 +76,6 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-    settings = {
-      user = {
-        name = "clippyricer";
-        email = "bannansmooth68@proton.me";
-      };
-      init.defaultBranch = "main";
-    };
   };
   
 
