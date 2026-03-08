@@ -11,8 +11,13 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "nodev";
+  boot.loader.grub.efiSupport = true;
+  boot.lodaer.efi.canTouchEfiVariables = true;
+  boot.lodaer.efi.efiSysMountPoint = "/boot";
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -75,7 +80,7 @@
   ];
 
   # Fonts
-  fonts.packages = with.pkgs; [ 
+  fonts.packages = with pkgs; [ 
     nerd-fonts.jetbrains-mono
   ];
 
