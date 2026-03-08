@@ -78,6 +78,8 @@
     git
     ly
     lazygit
+    python3
+    python3Packages.requests
   ];
 
   # Fonts
