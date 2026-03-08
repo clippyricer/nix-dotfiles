@@ -74,6 +74,11 @@
     ly
   ];
 
+  # Fonts
+  fonts.packages = with.pkgs; [ 
+    nerd-fonts.jetbrains-mono
+  ];
+
   # Programs
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
