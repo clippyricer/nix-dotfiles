@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1772993819,
-        "narHash": "sha256-arKQlQrZipBoggBfSSbFmW+zBj9GIv2b76LasujYSt4=",
+        "lastModified": 1772995024,
+        "narHash": "sha256-vqvs7nd9vX9bJh/1aRIpC+n9sJwB4U/Mluhl+eLtB9w=",
         "owner": "clippyricer",
         "repo": "dotfiles",
-        "rev": "b5b2802e0b017d6bb1dbb0751d304f0cd4631231",
+        "rev": "08ec2fe7a5d654fa0b0a6c02cb9c81eae7d800db",
         "type": "github"
       },
       "original": {

@@ -16,8 +16,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "nodev";
   boot.loader.grub.efiSupport = true;
-  boot.lodaer.efi.canTouchEfiVariables = true;
-  boot.lodaer.efi.efiSysMountPoint = "/boot";
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -74,14 +73,17 @@
     wget
     curl
     fastfetch
+    swww
     kitty
     git
     ly
+    lazygit
   ];
 
   # Fonts
   fonts.packages = with pkgs; [ 
     nerd-fonts.jetbrains-mono
+    font-awesome
   ];
 
   # Programs
