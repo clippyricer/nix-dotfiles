@@ -77,12 +77,17 @@
 
   # Programs
   users.defaultUserShell = pkgs.zsh;
-  services.displayManager.ly.enable = true;
   programs.zsh.enable = true;
   programs.hyprland.enable = true;
   programs.git = {
     enable = true;
     lfs.enable = true;
+  };
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      session_log = "/dev/null";
+    };
   };
   
 
